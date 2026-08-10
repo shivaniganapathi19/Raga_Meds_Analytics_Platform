@@ -1,42 +1,47 @@
 # 💊 Raga Meds Analytics Platform
 
-An end-to-end **pharmacy retail analytics platform** designed to transform transactional healthcare data into actionable business insights. The project combines **MySQL, SQL, Power BI, and DAX** to analyze sales, profitability, customers, inventory, suppliers, purchases, and geographical performance.
+An end-to-end **pharmacy retail analytics platform** designed to transform transactional healthcare data into actionable business insights.
 
-The platform includes an interactive **7-page Power BI dashboard** with executive KPIs, analytical visuals, DAX-driven AI-style insights, immediate business actions, city-level drill-through, and interactive report-page tooltips.
+The project combines **MySQL, SQL, Power BI, and DAX** to analyze sales, profitability, customers, inventory, suppliers, purchases, and geographical performance.
 
 ---
 
 ## 📌 Project Overview
 
-Pharmacy businesses generate large volumes of sales, inventory, customer, supplier, and purchase data. Without centralized analytics, it can be difficult to monitor profitability, identify high-performing products, manage inventory risks, understand customer behavior, and evaluate geographical performance.
+The **Raga Meds Analytics Platform** is a business intelligence solution designed for pharmacy retail businesses.
 
-**Raga Meds Analytics Platform** transforms relational pharmacy data into a structured business intelligence solution that helps turn raw transactional data into meaningful business insights.
+Pharmacy businesses generate large volumes of sales, customer, inventory, supplier, and purchase data. Without centralized analytics, it can be difficult to identify profitable medicines, monitor stock availability, understand customer behavior, evaluate supplier contribution, and identify operational risks.
 
-### End-to-End Workflow
+This project transforms relational pharmacy data into a structured analytics solution through the following workflow:
 
-**MySQL Database → SQL Analysis → Power BI Data Modeling → DAX Measures → Interactive Dashboard → Business Insights**
+**MySQL Database → SQL Analysis → Data Modeling → DAX Measures → Power BI Dashboard → Business Insights**
+
+The project demonstrates practical skills relevant to **Data Analyst, Business Intelligence Analyst, and Analytics roles**.
 
 ---
 
 # 🎯 Business Objectives
 
+The platform is designed to:
+
 * Monitor overall revenue and profitability
 * Analyze sales and order performance
 * Identify top-performing medicines and categories
-* Monitor inventory value and stock availability
+* Monitor inventory health
 * Identify low-stock medicines
 * Track medicines approaching expiry
 * Analyze customer retention and purchasing behavior
 * Identify high-value customers
 * Evaluate geographical sales performance
 * Analyze supplier and purchase performance
+* Generate executive business KPIs
 * Support data-driven business decisions
 
 ---
 
 # 🗄️ Database
 
-**Database Name:** `Raga_Meds_Analytics`
+**Database:** `Raga_Meds_Analytics`
 
 **Total Tables:** **9**
 
@@ -52,17 +57,19 @@ Pharmacy businesses generate large volumes of sales, inventory, customer, suppli
 | 8 | Purchases        |
 | 9 | Purchase_Details |
 
-The database follows a relational structure with primary keys and relationships connecting customers, sales, medicines, inventory, suppliers, and purchases.
+The database follows a relational structure connecting customers, sales, medicines, inventory, suppliers, and purchases.
 
 ---
 
 # 📊 Power BI Dashboard
 
-The completed Power BI report contains **7 analytical views**.
+The completed Power BI report contains **7 analytical views** designed to provide both executive-level and detailed operational insights.
+
+---
 
 ## 1. 📈 Executive Overview
 
-Provides a high-level summary of overall business performance.
+Provides a high-level summary of overall pharmacy business performance.
 
 ### Key Metrics
 
@@ -73,14 +80,14 @@ Provides a high-level summary of overall business performance.
 * Total Orders
 * Active Customers
 
-### Analysis Includes
+### Key Analysis
 
 * Revenue Trend
-* Top Revenue-Generating Categories
-* New Customers Over Time
+* Revenue by Category
 * Top Revenue-Generating Medicines
-* AI Insight
-* Immediate Action
+* New Customers Over Time
+* AI-Style Business Insight
+* Immediate Business Action
 
 ---
 
@@ -95,7 +102,7 @@ Provides detailed analysis of sales performance and profitability.
 * Total Quantity Sold
 * Average Order Value
 
-### Analysis Includes
+### Key Analysis
 
 * Monthly Revenue & Profit Trend
 * Top Customers by Revenue
@@ -107,7 +114,7 @@ Provides detailed analysis of sales performance and profitability.
 
 ## 3. 📦 Inventory Analytics
 
-Monitors inventory health and operational risks.
+Monitors inventory health and identifies operational risks.
 
 ### Key Metrics
 
@@ -116,14 +123,15 @@ Monitors inventory health and operational risks.
 * Total Medicines
 * Expiring Medicines
 
-### Analysis Includes
+### Key Analysis
 
 * Inventory by Category
 * Low Stock Analysis
 * Expiring Medicines
 * Inventory Value by Supplier
-* AI Insight
-* Immediate Action
+* Stock Monitoring
+* AI-Style Business Insight
+* Immediate Business Action
 
 ---
 
@@ -133,44 +141,43 @@ Analyzes customer behavior, retention, and purchasing patterns.
 
 ### Key Metrics
 
-* Active Customers
+* Customer Retention %
 * Repeat Customers
-* Customer Retention Rate
-* Average Revenue per Customer
+* Average Customer Value
+* Highest Customer Lifetime Value
 
-### Analysis Includes
+### Key Analysis
 
 * Top Customers by Lifetime Value
 * Customer Purchase Frequency
 * Revenue by Age Group
 * Repeat vs One-Time Customers
 * Customer Retention Analysis
-* AI Insight
-* Immediate Action
+* AI-Style Business Insight
+* Immediate Business Action
 
 ---
 
 ## 5. 🗺️ Geographical Analytics
 
-Analyzes geographical sales performance across cities using revenue, order volume, and interactive map visualization.
+Analyzes pharmacy business performance across cities.
 
-### Analysis Includes
+### Key Analysis
 
 * Revenue by City
 * Orders by City
 * Top Cities by Revenue
-* Geographical Sales Distribution
-* Interactive Geographical Map
-* AI Insight
-* Immediate Action
+* Geographical Performance Map
+* City-Level AI-Style Insight
+* Immediate Business Action
 
-The page supports city-level exploration and helps identify high-performing and lower-performing markets.
+The page supports interactive geographical analysis and city-level exploration.
 
 ---
 
 ## 6. 🏙️ City Details
 
-A drill-through page providing detailed analysis for a selected city.
+A dedicated **drill-through page** providing detailed analysis for a selected city.
 
 ### Key Metrics
 
@@ -179,19 +186,19 @@ A drill-through page providing detailed analysis for a selected city.
 * Total Orders
 * Average Order Value
 
-### Analysis Includes
+### Key Analysis
 
 * City Revenue Trend
 * Top Revenue-Generating Categories
 * Top Revenue-Generating Medicines
 * Top Revenue-Generating Customers
-* City-Specific AI Insight
+* City-Specific AI-Style Insight
 
 ---
 
 ## 7. 💡 City Tooltip
 
-A compact report-page tooltip designed to provide additional city-level context while interacting with geographical visuals.
+A compact **report-page tooltip** designed to provide additional city-level context while interacting with geographical visuals.
 
 ### Displays
 
@@ -200,27 +207,65 @@ A compact report-page tooltip designed to provide additional city-level context 
 * Orders
 * Average Order Value
 
-This provides contextual information without requiring users to leave the geographical analysis page.
+This allows users to view additional city information without leaving the main geographical analysis page.
+
+---
+
+# 🖼️ Dashboard Preview
+
+The Power BI report contains seven interactive analytical views covering executive performance, sales, inventory, customer behavior, geographical performance, and city-level analysis.
+
+### 📈 Executive Overview
+
+![Executive Overview](Screenshots/Executive_Overview.png)
+
+### 💰 Sales Analytics
+
+![Sales Analytics](Screenshots/Sales_Analytics.png)
+
+### 📦 Inventory Analytics
+
+![Inventory Analytics](Screenshots/Inventory_Analytics.png)
+
+### 👥 Customer Analytics
+
+![Customer Analytics](Screenshots/Customer_Analytics.png)
+
+### 🗺️ Geographical Analytics
+
+![Geographical Analytics](Screenshots/Geographical_Analytics.png)
+
+### 🏙️ City Details
+
+![City Details](Screenshots/City_Details.png)
+
+### 💡 City Tooltip
+
+![City Tooltip](Screenshots/City_Tooltip.png)
+
+> **Power BI Report:** `PowerBI/Raga_Meds_Analytics_Dashboard.pbix`
+>
+> The `.pbix` file can be downloaded from the repository and opened using **Power BI Desktop**.
 
 ---
 
 # 🤖 AI-Style Business Insights
 
-The dashboard includes dedicated **AI Insight** and **Immediate Action** sections generated dynamically using DAX.
+The dashboard includes dedicated **AI Insight** and **Immediate Action** sections.
 
 ### 💡 AI Insight
 
-Provides concise, data-driven summaries that highlight important business patterns and positive performance.
+Provides concise, data-driven summaries based on dashboard metrics to help users understand important business patterns.
 
 ### 📌 Immediate Action
 
-Highlights areas requiring management attention and converts analytical findings into practical business actions.
+Converts analytical findings into practical business actions and highlights areas requiring management attention.
 
-This creates a clear analytical narrative:
+The design separates:
 
 **What the data tells us → What the business should do next**
 
-> **Note:** The current implementation uses DAX-driven AI-style insights. A dedicated Generative AI assistant is planned as a future enhancement.
+> **Note:** These are currently implemented as **DAX-driven AI-style insights**, not a Generative AI system. A dedicated Generative AI assistant is planned as a future enhancement.
 
 ---
 
@@ -242,7 +287,7 @@ Key DAX concepts implemented include:
 * Revenue calculations
 * Customer metrics
 * Inventory metrics
-* Dynamic AI Insight measures
+* Dynamic AI-style insight measures
 
 ### Power BI Features
 
@@ -252,10 +297,32 @@ Key DAX concepts implemented include:
 * Report-page tooltips
 * Data-driven formatting
 * Interactive dashboard navigation
+* KPI cards
+* Business intelligence visualizations
 
 ---
 
-# 🛠️ SQL Concepts Demonstrated
+# 🛠️ SQL Analysis
+
+The project includes modular SQL scripts covering different areas of pharmacy business analytics.
+
+### SQL Modules
+
+| Script                       | Analysis                  |
+| ---------------------------- | ------------------------- |
+| `01_Create_Database.sql`     | Database creation         |
+| `02_Create_Tables.sql`       | Relational table creation |
+| `03_Data_Loading_Guide.sql`  | Data loading process      |
+| `04_Executive_KPIs.sql`      | Executive KPI analysis    |
+| `05_Customer_Analytics.sql`  | Customer analysis         |
+| `06_Inventory_Analytics.sql` | Inventory analysis        |
+| `07_Sales_Analytics.sql`     | Sales analysis            |
+| `08_Purchase_Analytics.sql`  | Purchase analysis         |
+| `09_Supplier_Analytics.sql`  | Supplier analysis         |
+
+---
+
+# 🧠 SQL Concepts Demonstrated
 
 The SQL analysis demonstrates practical analytical SQL techniques including:
 
@@ -285,7 +352,7 @@ The SQL analysis demonstrates practical analytical SQL techniques including:
 
 # 📊 Business Insights
 
-The platform helps identify:
+The analytics platform helps identify:
 
 * Top-performing medicines
 * Highest-revenue categories
@@ -299,6 +366,17 @@ The platform helps identify:
 * Supplier contribution
 * Purchase trends
 * Profitability patterns
+
+These insights can support decisions related to:
+
+* Inventory replenishment
+* Medicine purchasing
+* Customer retention
+* Supplier evaluation
+* Sales strategy
+* Product performance
+* Geographic expansion
+* Operational planning
 
 ---
 
@@ -333,6 +411,15 @@ Raga_Meds_Analytics_Platform/
 │
 ├── README.md
 │
+├── Documentation/
+│   ├── 01_Project_Overview.md
+│   ├── 02_Database_Schema.md
+│   ├── 03_SQL_Query_Summary.md
+│   └── 04_Project_Insights.md
+│
+├── PowerBI/
+│   └── Raga_Meds_Analytics_Dashboard.pbix
+│
 ├── SQL/
 │   ├── 01_Create_Database.sql
 │   ├── 02_Create_Tables.sql
@@ -343,15 +430,6 @@ Raga_Meds_Analytics_Platform/
 │   ├── 07_Sales_Analytics.sql
 │   ├── 08_Purchase_Analytics.sql
 │   └── 09_Supplier_Analytics.sql
-│
-├── Documentation/
-│   ├── 01_Project_Overview.md
-│   ├── 02_Database_Schema.md
-│   ├── 03_SQL_Query_Summary.md
-│   └── 04_Project_Insights.md
-│
-├── PowerBI/
-│   └── Raga_Meds_Analytics_Dashboard.pbix
 │
 └── Screenshots/
     ├── Executive_Overview.png
@@ -367,12 +445,14 @@ Raga_Meds_Analytics_Platform/
 
 # 🚀 Future Enhancements
 
-The next development phase will extend the platform beyond descriptive analytics.
+The next development phase will extend the platform beyond descriptive and business intelligence analytics.
 
 ## 🐍 Python EDA
 
+Planned Python analysis includes:
+
 * Data cleaning
-* Exploratory data analysis
+* Exploratory Data Analysis
 * Statistical analysis
 * Visualization
 * Business pattern discovery
@@ -389,23 +469,29 @@ Potential applications include:
 
 ## 🌐 Streamlit
 
-Development of an interactive web application combining:
+A future interactive web application will combine:
 
 **SQL + Python + Machine Learning + Business Analytics**
 
 ## ✨ Generative AI
 
-A business-focused AI assistant may be added to help users interpret analytics and generate actionable recommendations from the underlying business data.
+A future business-focused AI assistant may be added to help users:
 
-The goal is to use AI where it provides **genuine business value**, rather than adding a generic chatbot.
+* Interpret business analytics
+* Identify important trends
+* Explain KPIs
+* Generate actionable recommendations
+* Support pharmacy management decisions
+
+The goal is to add AI where it provides **real business value**, rather than creating a generic chatbot.
 
 ---
 
 # 📌 Project Highlights
 
-* ✅ End-to-End Pharmacy Retail Analytics
+* ✅ End-to-End Pharmacy Retail Analytics Project
 * ✅ 9 Relational Database Tables
-* ✅ SQL Business Analytics
+* ✅ Modular SQL Analytics
 * ✅ Advanced SQL Window Functions
 * ✅ Power BI Dashboard
 * ✅ 7 Analytical Dashboard Views
@@ -413,12 +499,33 @@ The goal is to use AI where it provides **genuine business value**, rather than 
 * ✅ Executive KPI Analysis
 * ✅ Customer Analytics
 * ✅ Inventory Analytics
+* ✅ Sales Analytics
+* ✅ Supplier & Purchase Analytics
 * ✅ Geographical Analysis
 * ✅ City-Level Drill-Through
 * ✅ Interactive Report-Page Tooltip
 * ✅ DAX-Driven AI-Style Business Insights
 * ✅ Immediate Business Actions
 * ✅ GitHub Documentation
+* ✅ Dashboard Screenshots
+* ✅ Downloadable Power BI Report
+
+---
+
+# 🎓 Skills Demonstrated
+
+* SQL
+* MySQL
+* Database Design
+* Data Modeling
+* Power BI
+* DAX
+* Business Intelligence
+* Healthcare Analytics
+* Data Analysis
+* Analytical Problem Solving
+* Dashboard Development
+* Git & GitHub
 
 ---
 
@@ -426,16 +533,16 @@ The goal is to use AI where it provides **genuine business value**, rather than 
 
 **G. Gokul Shivani**
 
-Aspiring Data Analyst | SQL | Python | Power BI | Business Intelligence
+**Aspiring Data Analyst | SQL | Python | Power BI | Business Intelligence**
 
 ---
 
 ## ⭐ Project Goal
 
-The long-term goal of **Raga Meds Analytics Platform** is to evolve from a business intelligence dashboard into a complete data-driven pharmacy analytics solution combining:
+The long-term goal of the **Raga Meds Analytics Platform** is to evolve from a business intelligence solution into a complete **data-driven pharmacy analytics platform**.
 
-**SQL → Python → Machine Learning → Power BI → Streamlit → Generative AI**
+The planned technology progression is:
 
-```
-```
+**SQL → Power BI → Python → Machine Learning → Streamlit → Generative AI**
 
+The ultimate objective is to combine business intelligence, predictive analytics, and business-focused AI to help pharmacy businesses make faster and more informed decisions.
